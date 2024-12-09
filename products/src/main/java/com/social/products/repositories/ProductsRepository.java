@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.social.products.models.Products;
 
 @Repository
-public interface ProductsRepository extends MongoRepository<Products,Integer>{
+public interface ProductsRepository extends MongoRepository<Products,String>{
     Products findById(String id);
     List<Products> findBySellerId(String sellerId);
     Void deleteById(String id);
