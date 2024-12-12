@@ -11,5 +11,5 @@ import com.social.products.models.Products;
 public interface ProductsRepository extends MongoRepository<Products,String>{
     Products findById(String id);
     List<Products> findBySellerId(String sellerId);
-    Void deleteById(String id);
+    void deleteById(String id);
 }
